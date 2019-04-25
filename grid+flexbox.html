@@ -20,20 +20,26 @@
       .container{/*background: #95a5a6;
                  padding: 10px;*/
                  display: grid;
-                 grid-template-columns: repeat(2, 1fr);
+                 grid-template-columns: repeat(12, 1fr);
                  grid-template-rows: 5vh 90vh 5vh; }
       
       .header{background: #e74c3c;
               padding: 10px;
-              grid-column: 1/-1;}
+              grid-column: 1/-1;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-evenly;}
+
+      /*.logout{margin-left:auto;
+              }*/        
       
       .sidebar{background: #2980b9;
                padding: 10px;
-               grid-column: 1/1 }
+               grid-column: 1/4}
       
       .content{background: #16a085;
                padding: 10px; 
-               grid-column: 2/-1}
+               grid-column: 4/-1}
       
       .footer{background: #2c3e50;
               padding: 10px;
@@ -45,7 +51,12 @@
 
   <body>
       <div class="container">
-          <div class="header">header</div>
+          <div class="header">
+            <div class="app-logo">My App</div>
+            <div class="home">Home</div>
+            <div class="search">Search</div>
+            <div class="logout">Logout</div>
+          </div>
           <div class="sidebar">sidebar</div>
           <div class="content">content</div>
           <div class="footer">footer</div>
